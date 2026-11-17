@@ -1,0 +1,280 @@
+{
+  "train_rounds": [
+    3,
+    4,
+    5
+  ],
+  "test_round": 6,
+  "n_start": 66,
+  "dropped_constant": [
+    "bidirectional_cwr_packets",
+    "bidirectional_ece_packets",
+    "bidirectional_urg_packets",
+    "src2dst_cwr_packets",
+    "src2dst_ece_packets",
+    "src2dst_urg_packets",
+    "dst2src_cwr_packets",
+    "dst2src_ece_packets",
+    "dst2src_urg_packets"
+  ],
+  "dropped_correlated": [
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "bidirectional_duration_ms",
+      "corr": 1.0
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "dst2src_duration_ms",
+      "corr": 1.0
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "bidirectional_stddev_piat_ms",
+      "corr": 0.962
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "bidirectional_max_piat_ms",
+      "corr": 0.952
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "src2dst_mean_piat_ms",
+      "corr": 0.972
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "src2dst_stddev_piat_ms",
+      "corr": 0.966
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "dst2src_stddev_piat_ms",
+      "corr": 0.958
+    },
+    {
+      "kept": "src2dst_duration_ms",
+      "dropped": "dst2src_max_piat_ms",
+      "corr": 0.952
+    },
+    {
+      "kept": "bidirectional_packets",
+      "dropped": "src2dst_packets",
+      "corr": 0.996
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "bidirectional_packets",
+      "corr": 0.972
+    },
+    {
+      "kept": "bidirectional_bytes",
+      "dropped": "dst2src_bytes",
+      "corr": 0.961
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "dst2src_packets",
+      "corr": 0.968
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "src2dst_mean_ps",
+      "corr": 0.972
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "src2dst_stddev_ps",
+      "corr": 0.995
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "src2dst_max_ps",
+      "corr": 0.996
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "bidirectional_ack_packets",
+      "corr": 0.97
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "bidirectional_psh_packets",
+      "corr": 0.977
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "src2dst_ack_packets",
+      "corr": 0.965
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "src2dst_psh_packets",
+      "corr": 0.971
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "dst2src_ack_packets",
+      "corr": 0.968
+    },
+    {
+      "kept": "src2dst_bytes",
+      "dropped": "dst2src_psh_packets",
+      "corr": 0.978
+    },
+    {
+      "kept": "bidirectional_stddev_ps",
+      "dropped": "bidirectional_mean_ps",
+      "corr": 0.997
+    },
+    {
+      "kept": "bidirectional_max_ps",
+      "dropped": "bidirectional_stddev_ps",
+      "corr": 0.997
+    },
+    {
+      "kept": "bidirectional_max_ps",
+      "dropped": "dst2src_mean_ps",
+      "corr": 0.985
+    },
+    {
+      "kept": "bidirectional_max_ps",
+      "dropped": "dst2src_stddev_ps",
+      "corr": 0.995
+    },
+    {
+      "kept": "dst2src_max_ps",
+      "dropped": "bidirectional_max_ps",
+      "corr": 1.0
+    },
+    {
+      "kept": "dst2src_max_ps",
+      "dropped": "down_up_ratio",
+      "corr": 0.969
+    },
+    {
+      "kept": "dst2src_mean_piat_ms",
+      "dropped": "bidirectional_mean_piat_ms",
+      "corr": 0.973
+    },
+    {
+      "kept": "bidirectional_syn_packets",
+      "dropped": "dst2src_syn_packets",
+      "corr": 0.995
+    },
+    {
+      "kept": "bidirectional_syn_packets",
+      "dropped": "dst2src_rst_packets",
+      "corr": 0.978
+    },
+    {
+      "kept": "bidirectional_fin_packets",
+      "dropped": "bidirectional_rst_packets",
+      "corr": 0.988
+    },
+    {
+      "kept": "bidirectional_fin_packets",
+      "dropped": "src2dst_fin_packets",
+      "corr": 0.999
+    },
+    {
+      "kept": "bidirectional_fin_packets",
+      "dropped": "dst2src_fin_packets",
+      "corr": 0.999
+    },
+    {
+      "kept": "bidirectional_fin_packets",
+      "dropped": "win_rst_ratio_10s",
+      "corr": 0.988
+    },
+    {
+      "kept": "win_half_open_10s",
+      "dropped": "win_flows_10s",
+      "corr": 1.0
+    }
+  ],
+  "selected": [
+    "dst2src_max_ps",
+    "src2dst_bytes",
+    "bidirectional_bytes",
+    "bidirectional_min_ps",
+    "dst2src_min_ps",
+    "src2dst_min_ps",
+    "bytes_per_s",
+    "src2dst_duration_ms",
+    "packets_per_s",
+    "src2dst_max_piat_ms",
+    "win_dst_ports_10s",
+    "src2dst_rst_packets",
+    "bidirectional_syn_packets",
+    "src2dst_min_piat_ms",
+    "win_half_open_10s",
+    "dst2src_mean_piat_ms",
+    "bidirectional_fin_packets",
+    "dst2src_min_piat_ms",
+    "bidirectional_min_piat_ms",
+    "src2dst_syn_packets",
+    "protocol",
+    "win_dst_ips_10s"
+  ],
+  "mi_scores": {
+    "dst2src_max_ps": 1.03365,
+    "src2dst_bytes": 1.03143,
+    "bidirectional_bytes": 1.02986,
+    "bidirectional_min_ps": 0.99464,
+    "dst2src_min_ps": 0.992,
+    "src2dst_min_ps": 0.98198,
+    "bytes_per_s": 0.90568,
+    "src2dst_duration_ms": 0.88742,
+    "packets_per_s": 0.83832,
+    "src2dst_max_piat_ms": 0.81583,
+    "win_dst_ports_10s": 0.78758,
+    "src2dst_rst_packets": 0.68568,
+    "bidirectional_syn_packets": 0.66383,
+    "src2dst_min_piat_ms": 0.49696,
+    "win_half_open_10s": 0.48203,
+    "dst2src_mean_piat_ms": 0.44063,
+    "bidirectional_fin_packets": 0.38926,
+    "dst2src_min_piat_ms": 0.19721,
+    "bidirectional_min_piat_ms": 0.12734,
+    "src2dst_syn_packets": 0.01035,
+    "protocol": 0.00339,
+    "win_dst_ips_10s": 0.0
+  },
+  "f1_by_k": {
+    "3": 0.996985090177762,
+    "5": 0.996985090177762,
+    "8": 0.996985090177762,
+    "10": 0.995681329274273,
+    "15": 0.9956478610268871,
+    "20": 0.9956478610268871,
+    "22": 0.9969516219303761
+  },
+  "minimal_k_in_lab": 3,
+  "working_k": 22,
+  "final_features": [
+    "dst2src_max_ps",
+    "src2dst_bytes",
+    "bidirectional_bytes",
+    "bidirectional_min_ps",
+    "dst2src_min_ps",
+    "src2dst_min_ps",
+    "bytes_per_s",
+    "src2dst_duration_ms",
+    "packets_per_s",
+    "src2dst_max_piat_ms",
+    "win_dst_ports_10s",
+    "src2dst_rst_packets",
+    "bidirectional_syn_packets",
+    "src2dst_min_piat_ms",
+    "win_half_open_10s",
+    "dst2src_mean_piat_ms",
+    "bidirectional_fin_packets",
+    "dst2src_min_piat_ms",
+    "bidirectional_min_piat_ms",
+    "src2dst_syn_packets",
+    "protocol",
+    "win_dst_ips_10s"
+  ]
+}

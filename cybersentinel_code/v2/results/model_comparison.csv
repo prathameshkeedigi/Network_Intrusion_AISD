@@ -1,0 +1,7 @@
+model,type,accuracy,macro_f1,recall_bruteforce,recall_normal,recall_scan,recall_synflood,attack_recall,normal_false_alarm,roc_auc,predict_ms,size_kb
+LogisticRegression,multiclass,0.9996,0.996,1.0,0.998,1.0,1.0,1.0,0.0022,1.0,0.404,2.3
+RandomForest,multiclass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,59.13,620.1
+XGBoost,multiclass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.667,632.0
+MLP,multiclass,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.538,124.7
+VotingEnsemble,ensemble,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,62.196,764.4
+IsolationForest,anomaly,,,,,,,0.7419,0.0067,0.9931,20.797,2018.8

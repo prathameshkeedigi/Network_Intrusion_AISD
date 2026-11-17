@@ -1,0 +1,33 @@
+{
+  "best": "XGBoost",
+  "features": [
+    "dst2src_max_ps",
+    "src2dst_bytes",
+    "bidirectional_bytes",
+    "bidirectional_min_ps",
+    "dst2src_min_ps",
+    "src2dst_min_ps",
+    "bytes_per_s",
+    "src2dst_duration_ms",
+    "packets_per_s",
+    "src2dst_max_piat_ms",
+    "win_dst_ports_10s",
+    "src2dst_rst_packets",
+    "bidirectional_syn_packets",
+    "src2dst_min_piat_ms",
+    "win_half_open_10s",
+    "dst2src_mean_piat_ms",
+    "bidirectional_fin_packets",
+    "dst2src_min_piat_ms",
+    "bidirectional_min_piat_ms",
+    "src2dst_syn_packets",
+    "protocol",
+    "win_dst_ips_10s"
+  ],
+  "classes": [
+    "bruteforce",
+    "normal",
+    "scan",
+    "synflood"
+  ]
+}

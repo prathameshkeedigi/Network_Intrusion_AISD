@@ -1,0 +1,20 @@
+# ── Installed libraries / build deps — NEVER commit (hundreds of MB) ──
+presentation/pylib/
+presentation/node_modules/
+
+# ── Python caches ──
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ── Oversized generated file: 114 MB, over GitHub's 100 MB limit ──
+# Regenerate with: cybersentinel_code/v2/make_eda_report.py
+cybersentinel_code/v2/results/eda_report.html
+
+# ── Office temp / lock files ──
+~$*
+*.tmp
+
+# ── Live detector output (regenerated each run) ──
+cybersentinel_code/v2/results/alerts.csv
+cybersentinel_code/v2/results/incidents.csv
